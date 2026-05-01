@@ -5,6 +5,9 @@ import Muslimbek from './components/muslimbek/Muslimbek'
 import Shohruhbek from './components/shohruhbek/Shohruhbek'
 import Oysha from './components/oysha/Oysha'
 import Omina from './components/omina/Omina'
+import vector from "./assets/Vector.png"
+import vectorr from "./assets/Vectorr.png"
+import okam from "./assets/okam.png"
 
 
 const tools = [
@@ -39,6 +42,18 @@ const tools = [
 ];
 
 const App = () => {
+  const headerData = {
+    logo: "antools.",
+    menu: ["Home", "Categories", "My Collections", "Blog"],
+    loginText: "Login",
+    signupText: "Sign Up",
+    title: "Awesome tools for Designer & Developer",
+    desc: "Antool is a web collection of information on paid or free Design and Development tools",
+    btnText: "Search",
+    placeholder: "Find more than 430+ tools..."
+  };
+
+
   return (
     <div>
       <Muslimbek/> 
@@ -49,6 +64,7 @@ const App = () => {
       <Oysha/>
       <Omina/>
     </div>
+
   )
 }
 
