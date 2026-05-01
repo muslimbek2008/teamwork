@@ -30,17 +30,30 @@ const footer_menu = [
   }
 ];
 const App = () => {
+  const headerData = {
+    logo: "antools.",
+    menu: ["Home", "Categories", "My Collections", "Blog"],
+    loginText: "Login",
+    signupText: "Sign Up",
+    title: "Awesome tools for Designer & Developer",
+    desc: "Antool is a web collection of information on paid or free Design and Development tools",
+    btnText: "Search",
+    placeholder: "Find more than 430+ tools..."
+  };
+
+
   return (
-    <div>
-      <Muslimbek/> 
-      <Alisher/>
-      <Bahriddin/>
-      <Shohruhbek/> 
+    <div className="bg-[#1E2125] min-h-screen">
+      <Muslimbek data={headerData} /> 
+      <Alisher />
+      <Bahriddin />
+      <Shohruhbek /> 
       <Otabek vector={vector} vectorr={vectorr} okam={okam} paragrf={paragrf}/>
       <Oysha/>
       <Omina logo={logo} menu={footer_menu} />
     </div>
+
   )
 }
 
-export default App
+export default App;

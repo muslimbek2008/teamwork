@@ -15,4 +15,4 @@ const Otabek = ({vector, vectorr , okam , paragrf}) => {
   )
 }
 
-export default Otabek
+export default Otabek;
