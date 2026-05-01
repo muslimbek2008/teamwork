@@ -6,19 +6,30 @@ import Shohruhbek from './components/shohruhbek/Shohruhbek'
 import Oysha from './components/oysha/Oysha'
 import Omina from './components/omina/Omina'
 
-
 const App = () => {
+  // All data sent via props
+  const headerData = {
+    logo: "antools.",
+    menu: ["Home", "Categories", "My Collections", "Blog"],
+    loginText: "Login",
+    signupText: "Sign Up",
+    title: "Awesome tools for Designer & Developer",
+    desc: "Antool is a web collection of information on paid or free Design and Development tools",
+    btnText: "Search",
+    placeholder: "Find more than 430+ tools..."
+  };
+
   return (
-    <div>
-      <Muslimbek/> 
-      <Alisher/>
-      <Bahriddin/>
-      <Shohruhbek/> 
-      <Otabek/>
-      <Oysha/>
-      <Omina/>
+    <div className="bg-[#1E2125] min-h-screen">
+      <Muslimbek data={headerData} /> 
+      <Alisher />
+      <Bahriddin />
+      <Shohruhbek /> 
+      <Otabek />
+      <Oysha />
+      <Omina />
     </div>
   )
 }
 
-export default App
+export default App;
