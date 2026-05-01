@@ -1,8 +1,8 @@
 
-const Omina = () => {
+export default function Omina() {
   return (
-    <div>Omina</div>
+    <div>
+      
+    </div>
   )
 }
-
-export default Omina

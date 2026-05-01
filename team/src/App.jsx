@@ -10,8 +10,36 @@ import vectorr from "./assets/Vectorr.png"
 import okam from "./assets/okam.png"
 
 
-// otabek
-const paragrf="Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incidsdidunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excteur non laboris id qui ad."
+const tools = [
+  {
+    id: 1,
+    title: "Zeplin",
+    price: "Free & Paid",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  ",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsroxnqgWp_NBLzN3OsNu3OD6UPHDnJgumQ&s",
+  },
+  {
+    id: 2,
+    title: "PHPStorm",
+    price: "Free",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "https://img.freepik.com/premium-psd/3d-photoshop-icon_913262-193.jpg?semt=ais_hybrid&w=740&q=80",
+  },
+  {
+    id: 3,
+    title: "Toolbox",
+    price: "Free",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "https://img.freepik.com/free-photo/3d-rendering-holographic-cube_23-2150979698.jpg?semt=ais_hybrid&w=740&q=80",
+  },
+  {
+    id: 4,
+    title: "Procreate",
+    price: "Paid",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Procreate_icon.png/250px-Procreate_icon.png",
+  },
+];
 
 const App = () => {
   const headerData = {
@@ -27,18 +55,17 @@ const App = () => {
 
 
   return (
-    <div className="bg-[#1E2125] min-h-screen">
-      <Muslimbek data={headerData} /> 
-      <Alisher />
-      <Bahriddin />
-      <Shohruhbek /> 
-      <Otabek vector={vector} vectorr={vectorr} okam={okam} paragrf={paragrf}/>
-
-      <Oysha />
-      <Omina />
+    <div>
+      <Muslimbek/> 
+      <Alisher/>
+      <Bahriddin/>
+      <Shohruhbek tools={tools} />
+      <Otabek/>
+      <Oysha/>
+      <Omina/>
     </div>
 
   )
 }
 
-export default App;
+export default App
